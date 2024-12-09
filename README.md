@@ -14,49 +14,25 @@ _Learn why conflicts happen and how to resolve them._
 </header>
 
 <!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
+  <<< Author notes: Step 1 >>>
+  Choose 3-5 steps for your course.
+  The first step is always the hardest, so pick something easy!
+  Link to docs.github.com for further explanations.
+  Encourage users to open new tabs for steps!
 -->
 
-## Welcome
+## Step 1: Create a pull request
 
-Merge conflicts happen when two people make changes to the same file on GitHub—a common occurrence when you’re working with others. While resolving differences might involve some discussion, merge conflicts don’t have to be scary. This course guides you through the steps to finding the best merge conflict solution, so your team can keep building.
+_Welcome to "Managing Merge Conflicts"! :wave:_
 
-- **Who is this for**: New developers, new GitHub users, users new to Git, students, managers, teams.
-- **What you'll learn**: What merge conflicts are, how you resolve merge conflicts, how to reduce merge conflicts.
-- **What you'll build**: We'll work with a short Markdown resume file in this course.
-- **Prerequisites**: We recommend taking [Introduction to GitHub](https://github.com/skills/introduction-to-github) prior to this course.
-- **How long**: This course takes less than 30 minutes to complete.
+**What is a _merge conflict_?**: A **merge conflict** occurs when changes are made to the same part of the same file on two different branches. You usually find out about conflicts in a pull request so let's start by creating one.
 
-In this course, you will:
+### :keyboard: Activity: Create a pull request
 
-1. Create a pull request
-2. Resolve a merge conflict
-3. Create a merge conflict
-4. Merge your pull request
-
-### How to start this course
-
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'resolve-merge-conflicts',
-  owner: '@me',
-  name: 'skills-resolve-merge-conflicts',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=resolve-merge-conflicts&owner=%40me&name=skills-resolve-merge-conflicts&description=My+clone+repository&visibility=public)
-
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
+1. We made a small change to a file in the repository in the `my-resume` branch.
+1. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) setting `my-resume` as the head branch and `main` as the base branch. You can enter `Resolving merge conflicts` for the pull request title and body.
+1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
 <footer>
 
