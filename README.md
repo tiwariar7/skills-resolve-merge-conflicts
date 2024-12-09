@@ -14,24 +14,31 @@ _Learn why conflicts happen and how to resolve them._
 </header>
 
 <!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
 -->
 
-## Step 1: Create a pull request
+## Step 2: Resolve a merge conflict
 
-_Welcome to "Managing Merge Conflicts"! :wave:_
+_Good start! Now let's look deeper at a merge conflict! :mag:_
 
-**What is a _merge conflict_?**: A **merge conflict** occurs when changes are made to the same part of the same file on two different branches. You usually find out about conflicts in a pull request so let's start by creating one.
+This can be intimidating, but have no fear, Git is smart when it comes to merging! Git only needs a human to decide how to [resolve the conflict](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line). Sometimes, the best way to resolve a merge conflict is to add content that's from both branches, or even something that isn't on either! This is why Git needs a human to look at the code and make the proper fixes.
 
-### :keyboard: Activity: Create a pull request
+### :keyboard: Activity: Resolve a merge conflict
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. We made a small change to a file in the repository in the `my-resume` branch.
-1. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) setting `my-resume` as the head branch and `main` as the base branch. You can enter `Resolving merge conflicts` for the pull request title and body.
+1. Open the pull request that you just created, we created a conflict for you. Have no fear!
+1. At the bottom of the page, under "This branch has conflicts that must be resolved", click the **Resolve conflicts** button.
+1. Look for the highlighted sections that begins with `<<<<<<< my-resume` and ends with `>>>>>>> main`. These markers are added by Git to show you the content that is in conflict.
+1. Remove the changes made on the main branch by deleting all of the content below the `=======` and above `>>>>>>> main`.
+1. Next, remove the merge conflict markers by deleting the following lines:
+   ```
+   <<<<<<< my-resume
+   =======
+   >>>>>>> main
+   ```
+1. With the merge conflict markers removed, click **Mark as resolved**.
+1. Finally, click **Commit merge**.
 1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
 <footer>
